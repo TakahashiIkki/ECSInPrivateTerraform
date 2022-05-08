@@ -41,10 +41,10 @@ resource "aws_security_group" "SG_ECS" {
     cidr_blocks = [
       aws_subnet.SampleVPC-Private-1a.cidr_block
     ]
-    from_port   = "0"
-    protocol    = "tcp"
-    self        = "false"
-    to_port     = "65535"
+    from_port = "0"
+    protocol  = "tcp"
+    self      = "false"
+    to_port   = "65535"
   }
 
   name   = "batch-cluster-security-group"
